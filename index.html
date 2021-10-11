@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+
+    <title>litepaintr</title>
+</head>
+
+<body>
+    <a id="monskvll" href="https://github.com/monskvll">@monskvll</a>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+
+    </div>
+    <div id="tools-container">
+        <button id="clearBtn">🗑️</button>
+
+        <div class="tools">
+            <label for="bgColorSel">BACKGROUND</label>
+            <input type="color" id="bgColorSel" name="bgColor" value="#FFFFFF" />
+        </div>
+
+        <div class="tools">
+            <label for="colorSel">PEN COLOR</label>
+            <input type="color" id="colorSel" name="color" value="#000000" />
+        </div>
+
+        <div class="tools">
+            <label for="penSizeSel">PEN SIZE</label>
+            <input type="number" id="penSizeSel" name="penSize" min="1" max="100" value="10" />
+        </div>
+
+        <div class="tools">
+            <label for="penShadowColorSel">SHADOW COLOR</label>
+            <input type="color" id="penShadowColorSel" name="penShadowColor" value="#000000" />
+        </div>
+
+        <div class="tools">
+            <label for="penShadowSizeSel">SHADOW SIZE</label>
+            <input type="number" id="penShadowSizeSel" name="penSize" min="0" max="100" value="1" />
+        </div>
+
+        <button id="exportBtn" target="_blank">💾</button>
+        <button id="toggleBtn" target="_blank">👁️</button>
+    </div>
+
+    <div id="exports-container" class="exports-container-toggle"></div>
+    <script src="canvas.js"></script>
+</body>
+
+</html>

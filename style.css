@@ -1,0 +1,79 @@
+body {    
+    color: #efefef;
+    padding: 0;
+    margin: 0;  
+    background-color: rgb(15, 15, 15);  
+    font-family: 'Gemunu Libre', sans-serif;    
+}
+
+#canvas {    
+    background-color: white;    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#tools-container {    
+    margin: 7vh 0 0 0;
+    display: flex;
+    justify-content: center;    
+}
+
+.tools {
+    border: 1px solid rgb(66, 66, 66);
+    border-radius: .1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .2em;
+    margin: 0 .5em;    
+}
+
+.tools * {    
+    margin: .2em;
+    text-align: center;
+}
+
+#exports-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;    
+}
+
+#exports-container * {
+    width: 10%; 
+    transition: 250ms;   
+}
+
+#exports-container *:hover {
+    box-shadow: 0 1px rgb(29, 200, 223);
+    filter: brightness(.85);    
+}
+
+.exports-container-toggle {
+    display: block;
+}
+
+#monskvll {
+    transition: 250ms;    
+}
+
+#monskvll:link {
+    color: #acacac;
+}
+
+#monskvll:visited {
+    color: rgb(129, 94, 133);
+}
+
+#monskvll:hover {
+    color: rgb(18, 201, 201);
+}
+
+#monskvll:active {
+    color: rgb(0, 255, 255);
+}
